@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class ex1
+{
+    public static void main(String[] args) 
+
+    {
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Informe seu Nome:  ");
+        String nome = ler.nextLine();
+        
+        System.out.println("Informe sua Idade:  ");
+        int idade = ler.nextInt();
+        
+        System.out.println("Informe seu salário:  ");
+        float salario = ler.nextFloat();
+        
+        System.out.println("Qual o percentual de aumento?  ");
+        float percentual = ler.nextFloat();
+        
+        System.out.println("O Nome informado foi:  " + nome); 
+        System.out.println("A Idade informada foi:  " + idade);
+        System.out.println("O Salário informado foi:  " + salario);
+        System.out.println("O novo Salário é:  " + (salario + (salario * percentual/100)));
+                
+    } 
+}
